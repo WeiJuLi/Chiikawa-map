@@ -1,0 +1,205 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-image: url('../src/images/bg.png'); /* Replace with the actual path to your background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Scales the background image to cover the entire area */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000; /* Ensures it is above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar-logo {
+  margin-left: 30px; /* Adjust as needed */
+}
+
+nav button {
+  background: none; /* Transparent background */
+  color: #a2a880;
+  border: none; /* No border */
+  cursor: pointer; /* Changes cursor to pointer */
+  display: none; /* Default hidden */
+}
+
+/* Base style for the unordered list */
+ul {
+  padding: 0;
+  margin: 0; /* Reset margin */
+  list-style: none; /* Remove bullets from the list */
+  display: flex; /* Default to flex for larger screens */
+  gap: 20px; /* Space between menu items */
+}
+
+/* List item styles */
+li {
+  cursor: pointer;
+  color: #a2a880; /* Text color */
+  margin-right: 30px;
+}
+
+/* When the screen width is 768px or less */ 
+@media (max-width: 768px) {
+  nav button {
+    display: block; /* Show the button on small screens */
+  }
+
+  /* Hide the menu items by default */
+  nav ul {
+    display: none; /* Hide by default */
+  }
+
+
+    /* Style for menu items */
+  .menu-item {
+    padding: 20px; /* Space for each item */
+    cursor: pointer; /* Pointer cursor for clickable items */
+    text-align: center; /* Center text */
+  }
+
+  /* Ensure button is always visible */
+  nav button {
+    position: relative; /* Keep it positioned within the nav */
+    z-index: 1100; /* Ensure it's above the menu */
+  }
+
+
+}
+
+.country-button {
+  background-color: #4f483e;
+  color: white;
+  border: 0px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.country-button:hover {
+  background-color: #7b7566; /* Slightly lighter brown on hover */
+}
+
+.region-button {
+  background-color: #bcab76;
+  color: white;
+  border: 0px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.region-button:hover {
+  background-color: #a29a80; /* Slightly lighter brown on hover */
+}
+
+
+
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%; /* Centered content */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#contact-form img {
+  padding-bottom: 16px;
+}
+
+
+/* General Form Styles */
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  color:#7b7566;
+}
+
+/* Form Labels */
+#contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Input Styles */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="url"],
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Radio Button Container */
+#contact-form-q1 {
+  display: flex;
+  gap: 10px; /* Space between radio buttons */
+  align-items: center; /* Center align radio buttons vertically with their labels */
+}
+
+#contact-form-q1 label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px; /* Remove bottom margin to keep them aligned */
+}
+
+/* Textarea */
+#contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+#contact-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #7b7566;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #a29a80;
+}
+
+
+.g-recaptcha {
+  width: 100%; /* Make it full width */
+  max-width: 400px; /* Set a maximum width */
+  margin: 20px auto; /* Center it */
+}
+
