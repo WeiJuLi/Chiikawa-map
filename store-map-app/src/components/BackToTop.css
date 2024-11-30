@@ -1,0 +1,31 @@
+/* Back to Top Button */
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    border: none; /* Removes any border */
+    background: none; /* Removes background color */
+    outline: none; 
+}
+
+.backToTopButton {
+    padding: 0;
+    margin: 0;
+    border: none; /* Removes any border */
+    background: none; /* Removes background color */
+    outline: none; 
+    cursor: pointer;
+}
+
+
+.backToTopButton > img {
+    width: 100px; /* Adjust to your image size */
+    height: 100px;
+    transition: transform 1s ease;
+    box-shadow: none; /* Remove any shadows */
+    border: none; /* Remove any borders */
+    background: none; /* Ensure no background is added */
+}
